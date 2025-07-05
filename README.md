@@ -8,27 +8,48 @@
 ## Directory Structure
 
 SWIRL_data/
-├── tables/ ```Structured data tables (from Excel sheets)```
+
+├── tables/ `Structured data tables (from Excel sheets)`
+
 │ ├── Data_Clinical_Pregnancyevel.csv
+
 │ ├── Data_MRI_DWI.csv
+
 │ └── ...
-├── metadata/ ```Metadata for the tables (column descriptions, units, etc.)```
+
+├── metadata/ `Metadata for the tables (column descriptions, units, etc.)`
+
 │ ├── Meta_Clinical_PregnancyLevel.csv
+
 │ └── Meta_PCM_MRI_Contraction_DWI.csv
-├── cases/ ```Case-level folders with raw modalities```
-│ ├── SWIRL_A_01/ ```Phase A data, visit once only```
+
+├── cases/ `Case-level folders with raw modalities·
+
+│ ├── SWIRL_A_01/ `Phase A data, visit once only`
+
 │ │ ├── SWIRL_A_01_org.nii.gz
+
 │ │ ├── SWIRL_A_01_contractions_measurements.csv
+
 │ │ └── ...
+
 │ ├── ...
-│ ├── SWIRL_B_017/ ```Phase B data, contains multiple visit```
+
+│ ├── SWIRL_B_017/ `Phase B data, contains multiple visit`
+
 │ │ ├── visit_1/
+
 │ │ │ ├── SWIRL_B_001_1_org.nii.gz
+
 │ │ │ ├── SWIRL_B_001_1_contractions_measurements.csv
+
 │ │ │ └── ...
+
 │ │ └── ...
+
 │ └── ...
-└── README.md ```Dataset description and structure```
+
+└── README.md `Dataset description and structure`
 
 
 ---
@@ -64,7 +85,7 @@ SWIRL_data/
   - `*_org.nii.gz`: 4D dynamic MRI imaging.
   - `*_mask.nii.gz`: 4D mask for the crossbounding MRI image.
   - `*_contractions_measurements.csv`: Case level mannuly checked contraction anylisis
-  - `TODO`: add signal data for db_v2?
+  - `TODO`: add signal data?
 ---
 
 ## Notes
